@@ -69,6 +69,12 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+        env:
+          # Repo variable MAINTENANCE_MODE=true publishes only a "Temporarily unavailable" page.
+          VITE_MAINTENANCE: ${{ vars.MAINTENANCE_MODE }}
+      - name: Note maintenance mode
+        if: vars.MAINTENANCE_MODE == 'true'
+        run: echo "### Maintenance mode is ON. The site shows only a 'Temporarily unavailable' page." >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-pages-artifact@v3
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         with:
@@ -102,6 +108,7 @@ jobs:
       - name: Page and assets load
         env:
           URL: ${{ needs.deploy.outputs.page_url }}
+          EXPECTED_TITLE: ${{ vars.MAINTENANCE_MODE == 'true' && 'Temporarily unavailable' || 'Algonquin Colour Day' }}
         run: |
           set -euo pipefail
           base="${URL%/}"
@@ -112,7 +119,7 @@ jobs:
             echo "Not ready yet, retrying..."; sleep 10
           done
           [ -n "$html" ] || { echo "::error::$base did not respond"; exit 1; }
-          echo "$html" | grep -q "<title>Algonquin Colour Day</title>" || { echo "::error::Page title missing"; exit 1; }
+          echo "$html" | grep -q "<title>$EXPECTED_TITLE</title>" || { echo "::error::Expected title '$EXPECTED_TITLE' not found"; exit 1; }
           assets=$(echo "$html" | grep -oE '/algonquin-colour-day/assets/[^"]+\.(js|css)' | sort -u)
           [ -n "$assets" ] || { echo "::error::No JS/CSS assets referenced"; exit 1; }
           for asset in $assets; do

@@ -42,6 +42,18 @@ Coverage must stay above 80% for lines, statements and functions, and 70% for br
 2. **Build** runs once both pass.
 3. On `main` only: **Deploy to GitHub Pages**, then a **Smoke test** that fetches the live site and checks the page title and that every JS and CSS file loads.
 
+### Maintenance mode
+
+To take the site offline without touching code, set the repo variable `MAINTENANCE_MODE` to `true` and re-run the workflow on `main`. The build then contains only a "Temporarily unavailable" page with a neutral title: no trip data, photos or places are published. Set it to `false` and re-run to bring the site back.
+
+```bash
+gh variable set MAINTENANCE_MODE --body true --repo anish0714/algonquin-colour-day
+```
+
+```bash
+gh workflow run ci-cd.yml --ref main --repo anish0714/algonquin-colour-day
+```
+
 Dependabot (`.github/dependabot.yml`) opens weekly PRs for npm packages and GitHub Actions, which go through the same checks.
 
 ## Pages
