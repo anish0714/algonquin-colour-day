@@ -75,7 +75,7 @@ jobs:
       - name: Note maintenance mode
         if: vars.MAINTENANCE_MODE == 'true'
         run: echo "### Maintenance mode is ON. The site shows only a 'Temporarily unavailable' page." >> "$GITHUB_STEP_SUMMARY"
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         with:
           path: dist
