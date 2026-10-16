@@ -11,7 +11,38 @@ npm run dev
 
 `npm run build` makes a static site in `dist/`.
 
-Live site: https://anish0714.github.io/algonquin-colour-day/. Every push to `main` lints, builds and redeploys it through `.github/workflows/deploy.yml`, and pull requests run the same lint and build as a check.
+Live site: https://anish0714.github.io/algonquin-colour-day/
+
+## Tests
+
+Jest with React Testing Library (jsdom). Babel (`babel.config.json`) is only used by Jest; Vite builds the app.
+
+```bash
+npm test
+```
+
+```bash
+npm run test:coverage
+```
+
+| File | What it checks |
+| --- | --- |
+| `src/lib/*.test.js` | Maps links, spot ordering and neighbours, nearest parking lots, scene painting |
+| `src/data/itinerary.test.js` | Trip data: unique ids, coordinates inside the park, photo credits and licences, timeline and route links, restaurants, no street addresses |
+| `src/components/*.test.jsx` | Photo gallery, cuisine filter, painted scenes, falling leaves (including reduced motion) |
+| `src/pages/pages.test.jsx` | Every tab and all 11 spot pages render, navigation, parking fees and lots, not-found pages |
+
+Coverage must stay above 80% for lines, statements and functions, and 70% for branches, or the run fails.
+
+## CI/CD
+
+`.github/workflows/ci-cd.yml` runs on every pull request and every push to `main`:
+
+1. **Lint** and **Unit and component tests** run in parallel. Tests publish a coverage summary on the run page and a full HTML report as an artifact.
+2. **Build** runs once both pass.
+3. On `main` only: **Deploy to GitHub Pages**, then a **Smoke test** that fetches the live site and checks the page title and that every JS and CSS file loads.
+
+Dependabot (`.github/dependabot.yml`) opens weekly PRs for npm packages and GitHub Actions, which go through the same checks.
 
 ## Pages
 

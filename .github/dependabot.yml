@@ -1,0 +1,14 @@
+version: 2
+updates:
+  # Weekly dependency bumps arrive as PRs and go through the same CI.
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      dev-dependencies:
+        dependency-type: development
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
