@@ -1,0 +1,469 @@
+{
+  "trip": {
+    "title": "Algonquin Fall Colour Day",
+    "date": "2026-10-17",
+    "summary": "Toronto → North York pickup → seven short stops for colour and photos → home around 10 PM. No trail over 2.1 km.",
+    "start": "Downtown Toronto",
+    "pickup": "North York",
+    "route": "401 W → 400 N → Hwy 11 N → Hwy 60 E"
+  },
+  "facts": [
+    {
+      "value": "Pass available",
+      "label": "Book \"DVP – Hwy 60\" now",
+      "tone": "ok"
+    },
+    {
+      "value": "5° / −3°C",
+      "label": "Dry and cold. Dress warm."
+    },
+    {
+      "value": "~10 km",
+      "label": "Total walking, in short pieces"
+    },
+    {
+      "value": "Sunset 6:20",
+      "label": "Leave the park ~5:50 PM"
+    }
+  ],
+  "bestSpot": {
+    "stopId": "lookout",
+    "heading": "Don't miss: Lookout Trail",
+    "lead": "If you only have time for one stop, make it this one. The ridge at the top looks out over several hundred square kilometres of Algonquin.",
+    "points": [
+      {
+        "label": "Where",
+        "text": "km 39.7, north side of Hwy 60, 3 km before the Visitor Centre"
+      },
+      {
+        "label": "Planned",
+        "text": "2:15 PM, about 1 hour on the trail"
+      },
+      {
+        "label": "Effort",
+        "text": "2.1 km loop, rated Difficult: steep and rocky, but short"
+      },
+      {
+        "label": "Parking",
+        "text": "Small lot that fills first. If full, do Spruce Bog and come back"
+      },
+      {
+        "label": "Photo tip",
+        "text": "Frame the view with the white pines at the edge of the ridge"
+      }
+    ],
+    "source": {
+      "name": "Friends of Algonquin Park: Lookout Trail",
+      "url": "https://algonquinpark.on.ca/visit/recreational_activites/lookout-trail.php"
+    }
+  },
+  "permit": {
+    "name": "DVP – Hwy 60 (does not include Booth's Rock Trail)",
+    "bookAt": "https://reservations.ontarioparks.ca",
+    "validHours": "7:00 AM – 10:00 PM on the date of issue",
+    "covers": "One vehicle and all occupants (up to 14). All Highway 60 corridor stops in this plan.",
+    "doesNotCover": [
+      "Other Algonquin access points (Achray, Kiosk, Brent, etc.)",
+      "Booth's Rock Trail (sold out for Oct 17)"
+    ],
+    "checkedBy": "Licence plate"
+  },
+  "timeline": [
+    {
+      "time": "8:00",
+      "type": "drive",
+      "title": "Leave downtown Toronto"
+    },
+    {
+      "time": "8:30",
+      "type": "drive",
+      "title": "Pickup in North York",
+      "note": "401 W → 400 N → Hwy 11 N → Hwy 60 E"
+    },
+    {
+      "time": "10:45",
+      "type": "drive",
+      "title": "Huntsville",
+      "note": "Gas, washroom, coffee, and pick up lunch to go. Last good fuel stop."
+    },
+    {
+      "time": "11:30",
+      "type": "drive",
+      "title": "West Gate (km 0)",
+      "note": "No stopping needed. Your plate is your permit."
+    },
+    {
+      "time": "11:40",
+      "type": "trail",
+      "stopId": "whiskey-rapids"
+    },
+    {
+      "time": "12:45",
+      "type": "view",
+      "stopId": "two-rivers-picnic"
+    },
+    {
+      "time": "1:15",
+      "type": "trail",
+      "stopId": "two-rivers-trail"
+    },
+    {
+      "time": "2:15",
+      "type": "trail",
+      "stopId": "lookout"
+    },
+    {
+      "time": "3:15",
+      "type": "trail",
+      "stopId": "spruce-bog"
+    },
+    {
+      "time": "4:00",
+      "type": "view",
+      "stopId": "visitor-centre"
+    },
+    {
+      "time": "4:50",
+      "type": "trail",
+      "stopId": "beaver-pond"
+    },
+    {
+      "time": "5:50",
+      "type": "drive",
+      "title": "Head home",
+      "note": "Dusk falls fast. Drive slowly and watch for moose."
+    },
+    {
+      "time": "7:15",
+      "type": "drive",
+      "title": "Dinner in Huntsville",
+      "note": "See Food for vegan and chicken picks."
+    },
+    {
+      "time": "10:00",
+      "type": "drive",
+      "title": "North York drop-off, then downtown",
+      "note": "About 10:30 PM downtown."
+    }
+  ],
+  "stops": [
+    {
+      "id": "whiskey-rapids",
+      "order": 1,
+      "name": "Whiskey Rapids Trail",
+      "km": 7.2,
+      "length": "2.1 km loop",
+      "duration": "~45 min",
+      "description": "Rapids and riverside colour along the Oxtongue River. Easy.",
+      "scene": "rapids",
+      "parking": "Small trailhead lot right off Hwy 60 at km 7.2.",
+      "lat": 45.4852764,
+      "lng": -78.7565124,
+      "photo": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Parque_Provincial_Algonqu%C3%ADn_19.jpg/960px-Parque_Provincial_Algonqu%C3%ADn_19.jpg",
+        "alt": "The Oxtongue River along the Whiskey Rapids Trail in early October",
+        "credit": "LBM1948",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Parque_Provincial_Algonqu%C3%ADn_19.jpg"
+      }
+    },
+    {
+      "id": "two-rivers-picnic",
+      "order": 2,
+      "name": "Lake of Two Rivers picnic area",
+      "km": 33.8,
+      "description": "Picnic lunch on the lakeshore.",
+      "scene": "lake",
+      "parking": "Picnic-area lot at km 33.8, a short walk to the tables and beach. Washrooms and bins here.",
+      "lat": 45.5857639,
+      "lng": -78.4785386,
+      "photo": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Fall_Colors_at_Algonquin_Provincial_Park%2C_Canada_-_Autumn_on_Lake_of_Two_Rivers_%2829648245373%29.jpg/960px-Fall_Colors_at_Algonquin_Provincial_Park%2C_Canada_-_Autumn_on_Lake_of_Two_Rivers_%2829648245373%29.jpg",
+        "alt": "Fall colours on the shore of Lake of Two Rivers",
+        "credit": "Tony Webster",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Fall_Colors_at_Algonquin_Provincial_Park,_Canada_-_Autumn_on_Lake_of_Two_Rivers_(29648245373).jpg"
+      }
+    },
+    {
+      "id": "two-rivers-trail",
+      "order": 3,
+      "name": "Two Rivers Trail",
+      "km": 31.1,
+      "length": "2.1 km loop",
+      "duration": "~50 min",
+      "description": "Short climb to a pine-topped cliff over the river valley.",
+      "scene": "cliff",
+      "parking": "Small trailhead lot at km 31.1. Drive back 3 km west from lunch.",
+      "lat": 45.5796401,
+      "lng": -78.512603
+    },
+    {
+      "id": "lookout",
+      "order": 4,
+      "name": "Lookout Trail",
+      "star": true,
+      "km": 39.7,
+      "length": "2.1 km loop",
+      "duration": "~1 hr",
+      "description": "The best view in the park, with hills and lakes in every direction. Steep and rugged. If the lot is full, do Spruce Bog first.",
+      "scene": "panorama",
+      "parking": "Small lot at km 39.7 that fills first. If full, go on to Spruce Bog and come back after.",
+      "lat": 45.578963,
+      "lng": -78.4066047,
+      "photo": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Parque_Provincial_Algonqu%C3%ADn_15.jpg/960px-Parque_Provincial_Algonqu%C3%ADn_15.jpg",
+        "alt": "White pines framing the view from Lookout Trail over autumn forest and Lake of Two Rivers",
+        "credit": "LBM1948",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Parque_Provincial_Algonqu%C3%ADn_15.jpg"
+      }
+    },
+    {
+      "id": "spruce-bog",
+      "order": 5,
+      "name": "Spruce Bog Boardwalk",
+      "km": 42.5,
+      "length": "1.5 km loop",
+      "duration": "~40 min",
+      "description": "Flat boardwalk through gold tamaracks, the strongest colour in mid-October.",
+      "scene": "bog",
+      "parking": "Trailhead lot at km 42.5, about 1 minute from the Visitor Centre.",
+      "lat": 45.5871755,
+      "lng": -78.3735033,
+      "photo": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Sunday_Creek_Bog.jpg/960px-Sunday_Creek_Bog.jpg",
+        "alt": "Sunday Creek Bog seen from the Spruce Bog Boardwalk in early October",
+        "credit": "The Cosmonaut",
+        "license": "CC BY-SA 2.5 CA",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/ca/deed.en",
+        "page": "https://commons.wikimedia.org/wiki/File:Sunday_Creek_Bog.jpg"
+      }
+    },
+    {
+      "id": "visitor-centre",
+      "order": 6,
+      "name": "Visitor Centre deck",
+      "km": 43,
+      "description": "Huge panorama with no walking, plus washrooms. Closes at 5 PM.",
+      "scene": "deck",
+      "parking": "Large lot, the biggest in the corridor. Best fallback if other lots are full.",
+      "lat": 45.5839494,
+      "lng": -78.3593196,
+      "photo": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Algonquin_Provincial_Park-_Fall_Colour-View_from_Visitor_Centre_%E2%80%93Ontario.jpg/960px-Algonquin_Provincial_Park-_Fall_Colour-View_from_Visitor_Centre_%E2%80%93Ontario.jpg",
+        "alt": "Fall colour view from the Visitor Centre over the Sunday Creek valley",
+        "credit": "Mhsheikholeslami",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Algonquin_Provincial_Park-_Fall_Colour-View_from_Visitor_Centre_%E2%80%93Ontario.jpg"
+      }
+    },
+    {
+      "id": "beaver-pond",
+      "order": 7,
+      "name": "Beaver Pond Trail",
+      "km": 45.2,
+      "length": "2 km loop",
+      "duration": "~55 min",
+      "description": "Beaver dams, ponds and a rocky viewpoint in late golden light.",
+      "scene": "pond",
+      "parking": "Small trailhead lot at km 45.2.",
+      "lat": 45.5919786,
+      "lng": -78.340137,
+      "photo": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Parque_Provincial_Algonqu%C3%ADn_52.jpg/960px-Parque_Provincial_Algonqu%C3%ADn_52.jpg",
+        "alt": "Golden grasses around the beaver pond beside Beaver Pond Trail",
+        "credit": "LBM1948",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Parque_Provincial_Algonqu%C3%ADn_52.jpg"
+      }
+    }
+  ],
+  "route": [
+    {
+      "km": 0,
+      "name": "West Gate",
+      "kind": "gate",
+      "note": "permit checked by plate"
+    },
+    {
+      "km": 7.2,
+      "name": "Whiskey Rapids Trail",
+      "kind": "stop",
+      "order": 1
+    },
+    {
+      "km": 13.8,
+      "name": "Hardwood Lookout",
+      "kind": "backup"
+    },
+    {
+      "km": 19.2,
+      "name": "Peck Lake",
+      "kind": "backup"
+    },
+    {
+      "km": 27.2,
+      "name": "Hemlock Bluff",
+      "kind": "backup"
+    },
+    {
+      "km": 31.1,
+      "name": "Two Rivers Trail",
+      "kind": "stop",
+      "order": 3
+    },
+    {
+      "km": 33.8,
+      "name": "Lake of Two Rivers",
+      "kind": "stop",
+      "order": 2,
+      "note": "picnic lunch"
+    },
+    {
+      "km": 39.7,
+      "name": "Lookout Trail",
+      "kind": "stop",
+      "order": 4,
+      "star": true
+    },
+    {
+      "km": 42.5,
+      "name": "Spruce Bog Boardwalk",
+      "kind": "stop",
+      "order": 5
+    },
+    {
+      "km": 43,
+      "name": "Visitor Centre deck",
+      "kind": "stop",
+      "order": 6
+    },
+    {
+      "km": 45.2,
+      "name": "Beaver Pond Trail",
+      "kind": "stop",
+      "order": 7
+    },
+    {
+      "km": 54.5,
+      "name": "Logging Museum",
+      "kind": "backup"
+    },
+    {
+      "km": 56,
+      "name": "East Gate",
+      "kind": "gate"
+    }
+  ],
+  "backups": [
+    {
+      "name": "Hardwood Lookout",
+      "km": 13.8,
+      "length": "0.8 km",
+      "note": "Quick view over Smoke Lake",
+      "parking": "Small trailhead lot",
+      "lat": 45.5287757,
+      "lng": -78.7059041
+    },
+    {
+      "name": "Peck Lake",
+      "km": 19.2,
+      "length": "1.9 km",
+      "note": "Easy lakeshore loop",
+      "parking": "Small trailhead lot",
+      "mapsQuery": "Peck Lake Trail Algonquin Park"
+    },
+    {
+      "name": "Hemlock Bluff",
+      "km": 27.2,
+      "length": "3.5 km",
+      "note": "Quieter, cliff view of Jack Lake",
+      "parking": "Small trailhead lot",
+      "mapsQuery": "Hemlock Bluff Trail Algonquin Park"
+    },
+    {
+      "name": "Logging Museum Trail",
+      "km": 54.5,
+      "length": "1.3 km",
+      "note": "Flat, with history exhibits",
+      "parking": "Large lot, plus overflow at Leaf Lake across the road",
+      "mapsQuery": "Algonquin Logging Museum"
+    }
+  ],
+  "skip": [
+    "Booth's Rock (sold out)",
+    "Centennial Ridges (10.4 km)"
+  ],
+  "food": {
+    "note": "There's no reliable food stop inside the park. Vegan menus change, so confirm at the counter.",
+    "lunch": {
+      "time": "~10:45 AM",
+      "places": [
+        {
+          "name": "Osmow's Shawarma",
+          "address": "17 Hanes Rd, Huntsville",
+          "hours": "Opens 10 AM",
+          "chicken": "Chicken shawarma wrap or rice bowl",
+          "vegan": "Falafel wrap or bowl; ask which sauces are vegan",
+          "lat": 45.3385294,
+          "lng": -79.2201451
+        },
+        {
+          "name": "Main St. Local Kitchen",
+          "address": "24 Main St E, Huntsville",
+          "hours": "Opens 8 AM",
+          "chicken": "Chicken sandwiches and wraps",
+          "vegan": "Ask the kitchen; they handle dietary requests well",
+          "lat": 45.3265948,
+          "lng": -79.2184016
+        }
+      ]
+    },
+    "dinner": {
+      "time": "~7:15 PM",
+      "places": [
+        {
+          "name": "Gangnam Korea",
+          "address": "99 Main St E, Huntsville",
+          "hours": "Until 10 PM Sat",
+          "chicken": "Korean fried chicken (bone-in is halal) or spicy chicken rice bowl",
+          "vegan": "Ask for a tofu or veggie rice bowl without egg",
+          "lat": 45.3276301,
+          "lng": -79.2135404
+        },
+        {
+          "name": "The Mill on Main",
+          "address": "50 Main St E, Huntsville",
+          "hours": "Until 10 PM Sat",
+          "chicken": "Chicken quesadilla, wood-fired pizza",
+          "vegan": "Black bean veggie burger or power bowl; ask for no dairy",
+          "lat": 45.327002,
+          "lng": -79.217419
+        },
+        {
+          "name": "Fox in the Henhouse",
+          "address": "12 John St, Huntsville",
+          "hours": "Closes 8 PM Sat",
+          "chicken": "Fried chicken sandwiches, the local favourite",
+          "vegan": "Any sandwich with crispy tofu instead of chicken; check the sauce",
+          "lat": 45.3287631,
+          "lng": -79.2149226
+        }
+      ]
+    }
+  },
+  "tips": [
+    "Gold tamaracks, birch and aspen are the colours now. Most red maples have dropped.",
+    "Still water at Two Rivers and Beaver Pond gives the best reflections.",
+    "Use HDR or a polarizer so the yellows pop against sky and water.",
+    "Cold drains phone batteries fast. Bring a power bank, gloves and a toque.",
+    "Wear shoes with grip. Rocks and leaves can be frosty in the morning."
+  ],
+  "mapsLinkFormat": "https://www.google.com/maps/search/?api=1&query={lat},{lng}"
+}
