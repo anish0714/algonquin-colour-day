@@ -50,7 +50,7 @@ jobs:
             console.log(["### Test coverage", "", "| Metric | % | Covered |", "| --- | --- | --- |",
               ...["statements", "branches", "functions", "lines"].map(row)].join("\n"));
           ' >> "$GITHUB_STEP_SUMMARY"
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         if: always()
         with:
           name: coverage-report
