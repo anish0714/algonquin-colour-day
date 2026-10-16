@@ -1,0 +1,122 @@
+name: CI/CD
+
+# Every PR: lint + tests (with coverage floor) + build.
+# Push to main: the same checks, then deploy to GitHub Pages and smoke-test the live site.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# A newer push to the same PR cancels the older run; main runs always finish.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+
+  test:
+    name: Unit and component tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      # Fails the job if coverage drops below the floors in jest.config.js.
+      - run: npm run test:coverage -- --ci
+      - name: Coverage summary
+        if: always() && hashFiles('coverage/coverage-summary.json') != ''
+        run: |
+          node -e '
+            const t = require("./coverage/coverage-summary.json").total;
+            const row = (k) => `| ${k} | ${t[k].pct}% | ${t[k].covered}/${t[k].total} |`;
+            console.log(["### Test coverage", "", "| Metric | % | Covered |", "| --- | --- | --- |",
+              ...["statements", "branches", "functions", "lines"].map(row)].join("\n"));
+          ' >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: coverage-report
+          path: coverage/
+          retention-days: 14
+
+  build:
+    name: Build
+    needs: [lint, test]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v3
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        with:
+          path: dist
+
+  deploy:
+    name: Deploy to GitHub Pages
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  smoke:
+    name: Smoke test live site
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Page and assets load
+        env:
+          URL: ${{ needs.deploy.outputs.page_url }}
+        run: |
+          set -euo pipefail
+          base="${URL%/}"
+          html=""
+          # Pages can take a few seconds to serve the new build.
+          for i in 1 2 3 4 5 6; do
+            html=$(curl -fsSL "$base/") && break
+            echo "Not ready yet, retrying..."; sleep 10
+          done
+          [ -n "$html" ] || { echo "::error::$base did not respond"; exit 1; }
+          echo "$html" | grep -q "<title>Algonquin Colour Day</title>" || { echo "::error::Page title missing"; exit 1; }
+          assets=$(echo "$html" | grep -oE '/algonquin-colour-day/assets/[^"]+\.(js|css)' | sort -u)
+          [ -n "$assets" ] || { echo "::error::No JS/CSS assets referenced"; exit 1; }
+          for asset in $assets; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' "$base/${asset#/algonquin-colour-day/}")
+            echo "$code $asset"
+            [ "$code" = "200" ] || { echo "::error::$asset returned $code"; exit 1; }
+          done
