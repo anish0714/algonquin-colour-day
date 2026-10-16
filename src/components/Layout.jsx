@@ -7,6 +7,7 @@ const TABS = [
   { to: '/', label: 'Overview', icon: 'home', end: true },
   { to: '/schedule', label: 'Schedule', icon: 'clock' },
   { to: '/spots', label: 'Spots', icon: 'pin' },
+  { to: '/parking', label: 'Parking', icon: 'car' },
   { to: '/food', label: 'Food', icon: 'food' },
   { to: '/tips', label: 'Tips', icon: 'info' },
 ]

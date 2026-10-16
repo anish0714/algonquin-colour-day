@@ -9,7 +9,8 @@ import usePageTitle from '../lib/usePageTitle.js'
 const NEXT = [
   { to: '/schedule', title: 'Schedule', text: 'Hour by hour, 8 AM to home' },
   { to: '/spots', title: 'Spots', text: 'Photos, info and parking for every stop' },
-  { to: '/food', title: 'Food', text: 'Chicken and vegan picks in Huntsville' },
+  { to: '/parking', title: 'Parking', text: 'Every lot on Hwy 60 and all fees' },
+  { to: '/food', title: 'Food', text: 'Indian, Thai, Mexican and more in Huntsville' },
   { to: '/tips', title: 'Tips & permit', text: 'Your pass, packing and photo tips' },
 ]
 
