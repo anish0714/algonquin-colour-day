@@ -10,7 +10,7 @@
   "facts": [
     {
       "value": "Pass available",
-      "label": "Book \"DVP – Hwy 60\" now",
+      "label": "Book \"DVP – Hwy 60\" · $21 per car",
       "tone": "ok"
     },
     {
@@ -66,7 +66,8 @@
       "Other Algonquin access points (Achray, Kiosk, Brent, etc.)",
       "Booth's Rock Trail (sold out for Oct 17)"
     ],
-    "checkedBy": "Licence plate"
+    "checkedBy": "Licence plate",
+    "cost": "$21.00 per vehicle per day, tax included"
   },
   "timeline": [
     {
@@ -751,61 +752,158 @@
   ],
   "food": {
     "note": "There's no reliable food stop inside the park. Vegan menus change, so confirm at the counter.",
-    "lunch": {
-      "time": "~10:45 AM",
-      "places": [
-        {
-          "name": "Osmow's Shawarma",
-          "address": "17 Hanes Rd, Huntsville",
-          "hours": "Opens 10 AM",
-          "chicken": "Chicken shawarma wrap or rice bowl",
-          "vegan": "Falafel wrap or bowl; ask which sauces are vegan",
-          "lat": 45.3385294,
-          "lng": -79.2201451
-        },
-        {
-          "name": "Main St. Local Kitchen",
-          "address": "24 Main St E, Huntsville",
-          "hours": "Opens 8 AM",
-          "chicken": "Chicken sandwiches and wraps",
-          "vegan": "Ask the kitchen; they handle dietary requests well",
-          "lat": 45.3265948,
-          "lng": -79.2184016
-        }
-      ]
-    },
-    "dinner": {
-      "time": "~7:15 PM",
-      "places": [
-        {
-          "name": "Gangnam Korea",
-          "address": "99 Main St E, Huntsville",
-          "hours": "Until 10 PM Sat",
-          "chicken": "Korean fried chicken (bone-in is halal) or spicy chicken rice bowl",
-          "vegan": "Ask for a tofu or veggie rice bowl without egg",
-          "lat": 45.3276301,
-          "lng": -79.2135404
-        },
-        {
-          "name": "The Mill on Main",
-          "address": "50 Main St E, Huntsville",
-          "hours": "Until 10 PM Sat",
-          "chicken": "Chicken quesadilla, wood-fired pizza",
-          "vegan": "Black bean veggie burger or power bowl; ask for no dairy",
-          "lat": 45.327002,
-          "lng": -79.217419
-        },
-        {
-          "name": "Fox in the Henhouse",
-          "address": "12 John St, Huntsville",
-          "hours": "Closes 8 PM Sat",
-          "chicken": "Fried chicken sandwiches, the local favourite",
-          "vegan": "Any sandwich with crispy tofu instead of chicken; check the sauce",
-          "lat": 45.3287631,
-          "lng": -79.2149226
-        }
-      ]
-    }
+    "lunchTime": "~10:45 AM",
+    "dinnerTime": "~7:15 PM",
+    "places": [
+      {
+        "name": "Osmow's Shawarma",
+        "address": "17 Hanes Rd, Huntsville",
+        "hours": "Opens 10 AM",
+        "chicken": "Chicken shawarma wrap or rice bowl",
+        "vegan": "Falafel wrap or bowl; ask which sauces are vegan",
+        "lat": 45.3385294,
+        "lng": -79.2201451,
+        "cuisine": "Middle Eastern",
+        "meals": [
+          "lunch"
+        ]
+      },
+      {
+        "name": "Main St. Local Kitchen",
+        "address": "24 Main St E, Huntsville",
+        "hours": "Opens 8 AM",
+        "chicken": "Chicken sandwiches and wraps",
+        "vegan": "Ask the kitchen; they handle dietary requests well",
+        "lat": 45.3265948,
+        "lng": -79.2184016,
+        "cuisine": "Canadian",
+        "meals": [
+          "lunch"
+        ]
+      },
+      {
+        "name": "Marigold",
+        "cuisine": "Indian",
+        "meals": [
+          "dinner",
+          "lunch"
+        ],
+        "address": "17 Main St E, Huntsville",
+        "hours": "Sat 11 AM – 10 PM",
+        "chicken": "Butter chicken or chicken tikka masala with garlic naan",
+        "vegan": "Chana masala, dal or aloo gobi with rice; ask for no ghee or cream",
+        "extra": "Also serves Thai and Indo-Chinese dishes. Opens at 11, so it also works for lunch if you reach Huntsville a little later.",
+        "lat": 45.3259738,
+        "lng": -79.2194622
+      },
+      {
+        "name": "Gangnam Korea",
+        "address": "99 Main St E, Huntsville",
+        "hours": "Until 10 PM Sat",
+        "chicken": "Korean fried chicken (bone-in is halal) or spicy chicken rice bowl",
+        "vegan": "Ask for a tofu or veggie rice bowl without egg",
+        "lat": 45.3276301,
+        "lng": -79.2135404,
+        "cuisine": "Korean",
+        "meals": [
+          "dinner"
+        ]
+      },
+      {
+        "name": "Seng's Authentic Thai",
+        "cuisine": "Thai",
+        "meals": [
+          "dinner"
+        ],
+        "address": "79 Main St E, Huntsville",
+        "hours": "Sat 12 – 9 PM",
+        "chicken": "Pad thai or green curry with chicken",
+        "vegan": "Tofu and vegetable curry or pad thai; ask for no fish sauce or egg",
+        "mapsQuery": "Seng's Authentic Thai Cuisine, 79 Main St E, Huntsville, ON"
+      },
+      {
+        "name": "El Pueblito",
+        "cuisine": "Mexican",
+        "meals": [
+          "dinner"
+        ],
+        "address": "155 Manitoba St, Huntsville",
+        "hours": "Sat 12 – 9:30 PM",
+        "chicken": "Chicken tacos or a chicken burrito",
+        "vegan": "Bean and vegetable tacos; ask for no cheese or crema",
+        "mapsQuery": "El Pueblito, 155 Manitoba St, Huntsville, ON"
+      },
+      {
+        "name": "Quesada Burritos & Tacos",
+        "cuisine": "Mexican",
+        "meals": [
+          "dinner",
+          "lunch"
+        ],
+        "address": "99 Main St E, Huntsville",
+        "hours": "Sat 11 AM – 11 PM",
+        "chicken": "Chicken burrito or bowl",
+        "vegan": "Veggie burrito or bowl with beans; skip the cheese and sour cream",
+        "mapsQuery": "Quesada Burritos & Tacos, 99 Main St E, Huntsville, ON"
+      },
+      {
+        "name": "That Little Place By The Lights",
+        "cuisine": "Italian",
+        "meals": [
+          "dinner"
+        ],
+        "address": "76 Main St E, Huntsville",
+        "hours": "Sat 11:30 AM – 8:30 PM",
+        "chicken": "Chicken parmigiana or a chicken pasta",
+        "vegan": "Tomato-sauce pasta with vegetables, no cheese; ask what the sauce contains",
+        "extra": "Closes 8:30, so go straight there.",
+        "mapsQuery": "That Little Place By The Lights, 76 Main St E, Huntsville, ON"
+      },
+      {
+        "name": "Portuguese House",
+        "cuisine": "Portuguese",
+        "meals": [
+          "dinner"
+        ],
+        "address": "21 West St S, Huntsville",
+        "hours": "Sat 11:30 AM – 2:45 PM, 4 – 9 PM",
+        "chicken": "Piri-piri grilled chicken",
+        "vegan": "Ask for rice, potatoes and salad without butter",
+        "mapsQuery": "Portuguese House, 21 West Street S, Huntsville, ON"
+      },
+      {
+        "name": "The Mill on Main",
+        "address": "50 Main St E, Huntsville",
+        "hours": "Until 10 PM Sat",
+        "chicken": "Chicken quesadilla, wood-fired pizza",
+        "vegan": "Black bean veggie burger or power bowl; ask for no dairy",
+        "lat": 45.327002,
+        "lng": -79.217419,
+        "cuisine": "Canadian",
+        "meals": [
+          "dinner"
+        ]
+      },
+      {
+        "name": "Fox in the Henhouse",
+        "address": "12 John St, Huntsville",
+        "hours": "Closes 8 PM Sat",
+        "chicken": "Fried chicken sandwiches, the local favourite",
+        "vegan": "Any sandwich with crispy tofu instead of chicken; check the sauce",
+        "lat": 45.3287631,
+        "lng": -79.2149226,
+        "cuisine": "Canadian",
+        "meals": [
+          "dinner"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "name": "Google Maps listings, Saturday hours checked Oct 16, 2026",
+        "url": "https://www.google.com/maps/search/restaurants+Huntsville+Ontario"
+      }
+    ]
   },
   "tips": [
     "Gold tamaracks, birch and aspen are the colours now. Most red maples have dropped.",
@@ -813,5 +911,179 @@
     "Use HDR or a polarizer so the yellows pop against sky and water.",
     "Cold drains phone batteries fast. Bring a power bank, gloves and a toque.",
     "Wear shoes with grip. Rocks and leaves can be frosty in the morning."
-  ]
+  ],
+  "parking": {
+    "summary": "Every parking lot on Highway 60 is included in your $21 Daily Vehicle Permit. There are no separate parking fees in the park, and parking in Huntsville is free.",
+    "fees": [
+      {
+        "item": "Daily Vehicle Permit, Highway 60",
+        "cost": "$21.00 per vehicle",
+        "note": "Tax included. Covers every trailhead, picnic ground, beach, the Visitor Centre and the Logging Museum, 7 AM to 10 PM. One car and up to 14 people."
+      },
+      {
+        "item": "Parking at any Highway 60 lot",
+        "cost": "Included",
+        "note": "No pay-and-display machines. Wardens check your licence plate against the permit."
+      },
+      {
+        "item": "Booth's Rock Trail lot",
+        "cost": "Separate permit",
+        "note": "Needs the \"DVP – Booth’s Rock Trail + Hwy 60\" permit (same price), which is sold out for Oct 17."
+      },
+      {
+        "item": "Ontario seniors (65+)",
+        "cost": "20% off",
+        "note": "Ontario residents only. Applied when you buy the permit."
+      },
+      {
+        "item": "Ontario residents with a disability",
+        "cost": "50% off",
+        "note": "With a CNIB card or an MTO accessible parking permit."
+      },
+      {
+        "item": "Canadian Armed Forces and veterans",
+        "cost": "Free on weekdays",
+        "note": "Ontario residents, weekdays only, so it does not apply on Saturday."
+      },
+      {
+        "item": "Huntsville downtown",
+        "cost": "Free",
+        "note": "3-hour limit on Main Street. Town lots are free; check signs for time limits."
+      }
+    ],
+    "buyNote": "Permits are sold online or by phone (1-888-668-7275) up to 5 days ahead. They are not sold at the gates, and are non-refundable.",
+    "parkLots": [
+      {
+        "id": "tea-lake-dam",
+        "name": "Tea Lake Dam Picnic Ground",
+        "km": 8,
+        "lat": 45.493946,
+        "lng": -78.750812,
+        "kind": "Picnic ground",
+        "note": "Lunch spot in the west end, near Whiskey Rapids.",
+        "source": "https://algonquinpark.on.ca/visit/recreational_activites/tea-lake-dam-picnic-ground.php"
+      },
+      {
+        "id": "mizzy-lake",
+        "name": "Mizzy Lake Trail",
+        "km": 15.4,
+        "lat": 45.542515,
+        "lng": -78.695621,
+        "kind": "Trailhead",
+        "note": "Toilets. The trail is 10.8 km, so use it for parking or washrooms only.",
+        "source": "https://algonquinpark.on.ca/visit/recreational_activites/mizzy-lake-trail.php"
+      },
+      {
+        "id": "canisbay",
+        "name": "Canisbay Lake Day Use Area",
+        "km": 23.1,
+        "lat": 45.566296,
+        "lng": -78.600831,
+        "kind": "Day use area",
+        "note": "Lakeside day use area near the campground.",
+        "source": "https://algonquinpark.on.ca/visit/recreational_activites/canisbay-lake-day-use-area.php"
+      },
+      {
+        "id": "track-and-tower",
+        "name": "Track and Tower Trail",
+        "km": 25,
+        "lat": 45.559924,
+        "lng": -78.577561,
+        "kind": "Trailhead",
+        "note": "Toilets. Lookout over Cache Lake, but the loop is 7.5 km.",
+        "source": "https://algonquinpark.on.ca/visit/recreational_activites/track-and-tower-trail.php"
+      },
+      {
+        "id": "bat-lake",
+        "name": "Bat Lake Trail",
+        "km": 30,
+        "lat": 45.576927,
+        "lng": -78.522514,
+        "kind": "Trailhead",
+        "note": "1 km west of Two Rivers Trail. The loop is 5.8 km.",
+        "source": "https://algonquinpark.on.ca/visit/recreational_activites/bat-lake-trail.php"
+      },
+      {
+        "id": "east-beach",
+        "name": "East Beach Picnic Ground and Beach",
+        "km": 35.4,
+        "lat": 45.577355,
+        "lng": -78.460563,
+        "kind": "Picnic ground",
+        "note": "One of the most popular picnic spots. Good lunch fallback 1.6 km east of Lake of Two Rivers.",
+        "source": "https://algonquinpark.on.ca/visit/recreational_activites/east-beach-picnic-ground-and-beach.php"
+      },
+      {
+        "id": "big-pines",
+        "name": "Big Pines Trail",
+        "km": 40.3,
+        "lat": 45.580366,
+        "lng": -78.399013,
+        "kind": "Trailhead",
+        "note": "Toilets. 600 m east of Lookout Trail; a 2.9 km fairly level loop past giant white pines.",
+        "source": "https://algonquinpark.on.ca/visit/recreational_activites/big-pines-trail.php"
+      },
+      {
+        "id": "costello-creek",
+        "name": "Costello Creek Picnic Ground",
+        "km": 46.3,
+        "lat": 45.599075,
+        "lng": -78.330497,
+        "kind": "Picnic ground",
+        "note": "1 km north on Opeongo Road from km 46.3, close to Beaver Pond Trail.",
+        "source": "https://algonquinpark.on.ca/visit/recreational_activites/costello-creek-picnic-ground.php"
+      },
+      {
+        "id": "leaf-lake",
+        "name": "Leaf Lake overflow",
+        "km": 54.5,
+        "mapsQuery": "Leaf Lake, Algonquin Provincial Park",
+        "kind": "Overflow lot",
+        "note": "Across the highway from the Logging Museum, used when the museum lot is full.",
+        "source": "https://www.omca.com/2026-algonquin-fall-bus-plan/"
+      }
+    ],
+    "townLots": [
+      {
+        "name": "Main Street",
+        "spaces": null,
+        "mapsQuery": "Main Street East, Huntsville, ON",
+        "note": "Free, 3-hour limit. Closest to Marigold, Gangnam Korea and The Mill."
+      },
+      {
+        "name": "High Street lot",
+        "spaces": 35,
+        "mapsQuery": "High Street and Princess Street, Huntsville, ON",
+        "note": "Behind Town Hall. Enter from High Street or Princess Street."
+      },
+      {
+        "name": "River Mill Park lot",
+        "spaces": 38,
+        "mapsQuery": "River Mill Park, Huntsville, ON",
+        "note": "At Dara Howell Way, by the river."
+      },
+      {
+        "name": "West Street North lot",
+        "spaces": 50,
+        "mapsQuery": "West Street North and Caroline Street, Huntsville, ON",
+        "note": "Behind the Royal Bank. 2 accessible spaces."
+      },
+      {
+        "name": "Minerva Street lot",
+        "spaces": 27,
+        "mapsQuery": "Minerva Street and West Street South, Huntsville, ON",
+        "note": "Near Portuguese House."
+      }
+    ],
+    "sources": [
+      {
+        "name": "Friends of Algonquin Park: Day Use Fees",
+        "url": "https://www.algonquinpark.on.ca/visit/general_park_info/fees-day-use.php"
+      },
+      {
+        "name": "Town of Huntsville: Parking",
+        "url": "https://www.huntsville.ca/roads-sidewalks-transit/parking/"
+      }
+    ]
+  }
 }

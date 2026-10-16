@@ -79,14 +79,14 @@ h1, h2, h3, h4 { text-wrap: balance; }
 
 .tabs-bottom {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
-  display: grid; grid-template-columns: repeat(5, 1fr);
+  display: grid; grid-template-columns: repeat(6, 1fr);
   background: var(--bar); border-top: 1px solid var(--line);
   backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
   padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 .tabs-bottom .tab {
   height: var(--tabbar-h); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
-  color: var(--muted); text-decoration: none; font: 500 11.5px var(--body); position: relative;
+  color: var(--muted); text-decoration: none; font: 500 11px var(--body); position: relative; min-width: 0;
 }
 .tabs-bottom .tab.active { color: var(--maple); }
 .tabs-bottom .tab.active::before {
@@ -107,7 +107,7 @@ h1, h2, h3, h4 { text-wrap: balance; }
   .tabs-bottom { display: none; }
   .wrap { padding-top: 24px; padding-bottom: 48px; }
 }
-@media (min-width: 760px) and (max-width: 900px) {
+@media (min-width: 760px) and (max-width: 1000px) {
   .tabs-top .tab { padding: 8px 10px; }
   .tabs-top .tab svg { display: none; }
 }
@@ -212,7 +212,7 @@ h2 { font: 700 25px/1.15 var(--display); margin: 0 0 4px; color: var(--maple); }
 @media (min-width: 760px) {
   .hero { padding: 36px 32px 30px; }
   .facts { grid-template-columns: repeat(4, 1fr); }
-  .jump { grid-template-columns: repeat(4, 1fr); }
+  .jump { grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
 }
 @media (min-width: 960px) {
   .overview-grid { grid-template-columns: 1.25fr 1fr; }
@@ -349,6 +349,59 @@ ol.tl::before { content: ""; position: absolute; left: 61px; top: 8px; bottom: 8
 .tag.vg { background: var(--vegan-bg); color: var(--vegan-fg); }
 @media (min-width: 600px) { .food { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 960px) { .food { grid-template-columns: repeat(3, 1fr); } }
+
+.filter { display: flex; flex-wrap: wrap; gap: 8px; }
+.filter-btn {
+  min-height: 38px; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line);
+  background: var(--surface); color: var(--fg); font: 500 15px var(--body); cursor: pointer;
+}
+.filter-btn:hover { border-color: var(--maple); }
+.filter-btn.on { background: var(--maple); border-color: var(--maple); color: var(--on-hero); }
+.cuisine { display: inline-block; font: 500 11px var(--mono); text-transform: uppercase; letter-spacing: .08em; color: var(--maple); }
+.fd .extra { color: var(--muted); font-size: 14px; font-style: italic; }
+.sources { margin: 0; font-size: 13px; color: var(--muted); }
+.sources a { font-weight: 500; }
+
+/* ---------- parking ---------- */
+.fee-table { display: grid; margin-top: 10px; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--surface-solid); }
+.fee-row { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; padding: 12px 14px; border-top: 1px solid var(--line); }
+.fee-row:first-child { border-top: 0; }
+.fee-row.head { display: none; }
+.fee-item { font-weight: 700; }
+.fee-cost { font: 700 18px var(--display); color: var(--forest); text-align: right; white-space: nowrap; }
+.fee-note { grid-column: 1 / -1; color: var(--muted); font-size: 14.5px; }
+@media (min-width: 760px) {
+  .fee-row { grid-template-columns: 1.1fr 0.7fr 2fr; align-items: baseline; }
+  .fee-row.head { display: grid; background: var(--gold-soft); font: 500 11.5px var(--mono); text-transform: uppercase; letter-spacing: .05em; }
+  .fee-cost { text-align: left; }
+  .fee-note { grid-column: auto; }
+}
+.fee-pill {
+  display: inline-block; font: 500 11px var(--mono); padding: 2px 8px; border-radius: 999px;
+  background: var(--vegan-bg); color: var(--vegan-fg); white-space: nowrap;
+}
+.fee-line { margin: 8px 0 4px; font-size: 14.5px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+
+.lots { list-style: none; margin: 0; padding: 0; display: grid; }
+.lot { display: grid; grid-template-columns: 62px 1fr; gap: 10px; padding: 12px 0; border-top: 1px solid var(--line); }
+.lot:first-child { border-top: 0; padding-top: 4px; }
+.lot-km { font: 500 12px var(--mono); color: var(--muted); padding-top: 3px; font-variant-numeric: tabular-nums; }
+.lot-body { min-width: 0; }
+.lot h3 { margin: 0; font: 700 17px/1.25 var(--display); display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: baseline; }
+.lot.ours h3 a { color: var(--maple); }
+.lot-kind { font: 500 11px var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.lot p { margin: 2px 0 0; font-size: 14.5px; color: var(--muted); }
+.lot-links { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 6px; font-size: 14px; }
+
+.nearby-title { margin: 18px 0 6px; font: 700 18px var(--display); }
+.nearby { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.nearby li {
+  display: grid; grid-template-columns: 62px 1fr auto; gap: 10px; align-items: center;
+  padding: 8px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface-solid);
+}
+.nearby-name { display: grid; min-width: 0; font-weight: 700; }
+.nearby-name small { font-weight: 400; color: var(--muted); font-size: 13px; }
+.nearby li > a { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 8px; border: 1px solid var(--line); }
 
 /* ---------- tips ---------- */
 .two-col { display: grid; gap: 20px; align-items: start; }

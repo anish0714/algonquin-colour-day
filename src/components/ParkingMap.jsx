@@ -1,12 +1,16 @@
+import { Link } from 'react-router-dom'
 import Icon from './Icon.jsx'
 import { directionsUrl, mapsUrl, osmEmbedUrl } from '../lib/maps.js'
+import { nearbyLots } from '../lib/parking.js'
 
 export default function ParkingMap({ spot }) {
   const embed = osmEmbedUrl(spot)
+  const nearby = nearbyLots(spot)
   return (
     <section className="panel parking" aria-labelledby="parking-title">
       <h2 id="parking-title"><span className="park-badge" aria-hidden="true">P</span> Parking</h2>
       <p className="parking-text">{spot.parking}</p>
+      <p className="fee-line"><span className="fee-pill">Fee: included</span> Covered by your $21 Daily Vehicle Permit. <Link to="/parking">All fees</Link></p>
       {spot.lat != null && (
         <p className="coords">{spot.lat.toFixed(5)}, {spot.lng.toFixed(5)} · Hwy 60 km {spot.km}</p>
       )}
@@ -23,7 +27,23 @@ export default function ParkingMap({ spot }) {
           <Icon name="map" size={18} /> Open in Google Maps
         </a>
       </div>
-      <p className="hint">Never park on the highway shoulder. If the lot is full, move on and come back later.</p>
+
+      <h3 className="nearby-title">If this lot is full</h3>
+      <ul className="nearby">
+        {nearby.map((l) => (
+          <li key={l.id}>
+            <span className="lot-km">{l.km > spot.km ? '+' : '−'}{l.distance.toFixed(1)} km</span>
+            <span className="nearby-name">
+              {l.spotPage ? <Link to={`/spots/${l.id}`}>{l.name}</Link> : l.name}
+              <small>{l.kind} · km {l.km}</small>
+            </span>
+            <a href={directionsUrl(l)} target="_blank" rel="noopener noreferrer" aria-label={`Directions to ${l.name}`}>
+              <Icon name="car" size={18} />
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p className="hint">Never park on the highway shoulder. <Link to="/parking">See every lot on Highway 60</Link>.</p>
     </section>
   )
 }

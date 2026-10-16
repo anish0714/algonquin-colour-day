@@ -23,7 +23,8 @@ Routing uses `HashRouter`, so deep links like `#/spots/lookout` work on GitHub P
 | Schedule | `#/schedule` | Hour-by-hour timeline |
 | Spots | `#/spots` | Cards for all 7 stops and 4 backups |
 | Spot page | `#/spots/:id` | Photo gallery, facts, about, parking map with directions |
-| Food | `#/food` | Lunch and dinner picks in Huntsville |
+| Parking | `#/parking` | All fees, every lot on Highway 60, free lots in Huntsville |
+| Food | `#/food` | Lunch and dinner picks in Huntsville, filterable by cuisine |
 | Tips | `#/tips` | Park pass details and packing/photo tips |
 
 ## Where things live

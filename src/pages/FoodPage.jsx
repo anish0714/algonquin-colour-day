@@ -8,7 +8,7 @@ export default function FoodPage() {
     <div className="page">
       <header className="page-head">
         <h1>Food in Huntsville</h1>
-        <p className="sub">Grab lunch to go on the way up and eat dinner on the way home. {data.food.note}</p>
+        <p className="sub">Indian, Thai, Korean, Mexican, Italian, Portuguese and more. Grab lunch to go on the way up and eat dinner on the way home. {data.food.note}</p>
       </header>
       <FoodSection food={data.food} />
     </div>
