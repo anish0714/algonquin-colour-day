@@ -2,7 +2,7 @@
   "trip": {
     "title": "Algonquin Fall Colour Day",
     "date": "2026-10-17",
-    "summary": "Toronto → North York pickup → seven short stops for colour and photos → home around 10 PM. No trail over 2.1 km.",
+    "summary": "Toronto → North York pickup → seven short stops for colour and photos → home around 10 PM. No trail over 2.3 km.",
     "start": "Downtown Toronto",
     "pickup": "North York",
     "route": "401 W → 400 N → Hwy 11 N → Hwy 60 E"
@@ -157,16 +157,43 @@
       "description": "Rapids and riverside colour along the Oxtongue River. Easy.",
       "scene": "rapids",
       "parking": "Small trailhead lot right off Hwy 60 at km 7.2.",
-      "lat": 45.4852764,
-      "lng": -78.7565124,
-      "photo": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Parque_Provincial_Algonqu%C3%ADn_19.jpg/960px-Parque_Provincial_Algonqu%C3%ADn_19.jpg",
-        "alt": "The Oxtongue River along the Whiskey Rapids Trail in early October",
-        "credit": "LBM1948",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Parque_Provincial_Algonqu%C3%ADn_19.jpg"
-      }
+      "lat": 45.485437,
+      "lng": -78.756241,
+      "difficulty": "Moderate",
+      "source": {
+        "name": "Friends of Algonquin Park: Whiskey Rapids Trail",
+        "url": "https://algonquinpark.on.ca/visit/recreational_activites/whiskey-rapids-trail.php"
+      },
+      "about": "A loop along the Oxtongue River to Whiskey Rapids, with a guide on river ecology and history. The trail closes after heavy rain when the river floods, so check park advisories that morning.",
+      "highlights": [
+        "Rapids on the Oxtongue River",
+        "Riverside fall colour",
+        "Steep uphill on the way back to the lot"
+      ],
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Parque_Provincial_Algonqu%C3%ADn_19.jpg/1280px-Parque_Provincial_Algonqu%C3%ADn_19.jpg",
+          "width": 1280,
+          "height": 1927,
+          "alt": "A calm backwater of the Oxtongue River with spruce and fall colour on the banks",
+          "credit": "LBM1948",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Parque_Provincial_Algonqu%C3%ADn_19.jpg",
+          "date": "2010-10-08"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Parque_Provincial_Algonqu%C3%ADn_17.jpg/1280px-Parque_Provincial_Algonqu%C3%ADn_17.jpg",
+          "width": 1280,
+          "height": 818,
+          "alt": "Tree roots across the path beside the Whiskey Rapids Trail",
+          "credit": "LBM1948",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Parque_Provincial_Algonqu%C3%ADn_17.jpg",
+          "date": "2010-10-08"
+        }
+      ]
     },
     {
       "id": "two-rivers-picnic",
@@ -178,27 +205,62 @@
       "parking": "Picnic-area lot at km 33.8, a short walk to the tables and beach. Washrooms and bins here.",
       "lat": 45.5857639,
       "lng": -78.4785386,
-      "photo": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Fall_Colors_at_Algonquin_Provincial_Park%2C_Canada_-_Autumn_on_Lake_of_Two_Rivers_%2829648245373%29.jpg/960px-Fall_Colors_at_Algonquin_Provincial_Park%2C_Canada_-_Autumn_on_Lake_of_Two_Rivers_%2829648245373%29.jpg",
-        "alt": "Fall colours on the shore of Lake of Two Rivers",
-        "credit": "Tony Webster",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Fall_Colors_at_Algonquin_Provincial_Park,_Canada_-_Autumn_on_Lake_of_Two_Rivers_(29648245373).jpg"
-      }
+      "difficulty": "Easy",
+      "about": "The Two Rivers picnic ground and beach sit on the shore of Lake of Two Rivers. It is a flat, easy place to eat with tables, washrooms and bins, and the lake reflects the hills on calm days.",
+      "highlights": [
+        "Picnic tables on the beach",
+        "Washrooms and bins",
+        "Lake views for a lunch break"
+      ],
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Fall_Colors_at_Algonquin_Provincial_Park%2C_Canada_-_Autumn_on_Lake_of_Two_Rivers_%2829648245373%29.jpg/1280px-Fall_Colors_at_Algonquin_Provincial_Park%2C_Canada_-_Autumn_on_Lake_of_Two_Rivers_%2829648245373%29.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "Red and orange hills above the blue water of Lake of Two Rivers",
+          "credit": "Tony Webster",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Fall_Colors_at_Algonquin_Provincial_Park%2C_Canada_-_Autumn_on_Lake_of_Two_Rivers_%2829648245373%29.jpg",
+          "date": "2016-10-11"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Lake_of_Two_Rivers%2C_Algonquin_Provincial_Park.jpg/1280px-Lake_of_Two_Rivers%2C_Algonquin_Provincial_Park.jpg",
+          "width": 1280,
+          "height": 332,
+          "alt": "Wide panorama of Lake of Two Rivers under a cloudy October sky",
+          "credit": "David Zhang",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Lake_of_Two_Rivers%2C_Algonquin_Provincial_Park.jpg",
+          "date": "2016-10-09"
+        }
+      ]
     },
     {
       "id": "two-rivers-trail",
       "order": 3,
       "name": "Two Rivers Trail",
-      "km": 31.1,
-      "length": "2.1 km loop",
+      "km": 31,
+      "length": "2.3 km loop",
       "duration": "~50 min",
       "description": "Short climb to a pine-topped cliff over the river valley.",
       "scene": "cliff",
-      "parking": "Small trailhead lot at km 31.1. Drive back 3 km west from lunch.",
-      "lat": 45.5796401,
-      "lng": -78.512603
+      "parking": "Small trailhead lot at km 31.0. Drive back 3 km west from lunch.",
+      "lat": 45.579661,
+      "lng": -78.512984,
+      "difficulty": "Moderate",
+      "source": {
+        "name": "Friends of Algonquin Park: Two Rivers Trail",
+        "url": "https://algonquinpark.on.ca/visit/recreational_activites/two-rivers-trail.php"
+      },
+      "about": "An easy climb to a pine-topped cliff, with a guide on how Algonquin forests change over time. The cliff looks over the river valley.",
+      "highlights": [
+        "Pine-clad cliff lookout",
+        "Easy ascent",
+        "Close to the lunch stop"
+      ],
+      "photos": []
     },
     {
       "id": "lookout",
@@ -211,16 +273,54 @@
       "description": "The best view in the park, with hills and lakes in every direction. Steep and rugged. If the lot is full, do Spruce Bog first.",
       "scene": "panorama",
       "parking": "Small lot at km 39.7 that fills first. If full, go on to Spruce Bog and come back after.",
-      "lat": 45.578963,
-      "lng": -78.4066047,
-      "photo": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Parque_Provincial_Algonqu%C3%ADn_15.jpg/960px-Parque_Provincial_Algonqu%C3%ADn_15.jpg",
-        "alt": "White pines framing the view from Lookout Trail over autumn forest and Lake of Two Rivers",
-        "credit": "LBM1948",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Parque_Provincial_Algonqu%C3%ADn_15.jpg"
-      }
+      "lat": 45.579123,
+      "lng": -78.406543,
+      "difficulty": "Difficult",
+      "source": {
+        "name": "Friends of Algonquin Park: Lookout Trail",
+        "url": "https://algonquinpark.on.ca/visit/recreational_activites/lookout-trail.php"
+      },
+      "about": "A steep, rugged loop to a high ridge with a view over several hundred square kilometres of Algonquin. The trail guide covers the park’s geology. This is the best single view of the day.",
+      "highlights": [
+        "Panorama from a high ridge",
+        "Best fall colour view in the corridor",
+        "Steep and rocky, so take it slow"
+      ],
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Parque_Provincial_Algonqu%C3%ADn_15.jpg/1280px-Parque_Provincial_Algonqu%C3%ADn_15.jpg",
+          "width": 1280,
+          "height": 794,
+          "alt": "White pines framing the view from Lookout Trail over autumn forest and Lake of Two Rivers",
+          "credit": "LBM1948",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Parque_Provincial_Algonqu%C3%ADn_15.jpg",
+          "date": "2010-10-07"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Parque_Provincial_Algonqu%C3%ADn_13.jpg/1280px-Parque_Provincial_Algonqu%C3%ADn_13.jpg",
+          "width": 1280,
+          "height": 757,
+          "alt": "A sea of orange and gold treetops seen from the Lookout Trail ridge",
+          "credit": "LBM1948",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Parque_Provincial_Algonqu%C3%ADn_13.jpg",
+          "date": "2010-10-07"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Parque_Provincial_Algonqu%C3%ADn_14.jpg/1280px-Parque_Provincial_Algonqu%C3%ADn_14.jpg",
+          "width": 1280,
+          "height": 850,
+          "alt": "Rolling hills of fall colour from the top of Lookout Trail",
+          "credit": "LBM1948",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Parque_Provincial_Algonqu%C3%ADn_14.jpg",
+          "date": "2010-10-07"
+        }
+      ]
     },
     {
       "id": "spruce-bog",
@@ -232,16 +332,54 @@
       "description": "Flat boardwalk through gold tamaracks, the strongest colour in mid-October.",
       "scene": "bog",
       "parking": "Trailhead lot at km 42.5, about 1 minute from the Visitor Centre.",
-      "lat": 45.5871755,
-      "lng": -78.3735033,
-      "photo": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Sunday_Creek_Bog.jpg/960px-Sunday_Creek_Bog.jpg",
-        "alt": "Sunday Creek Bog seen from the Spruce Bog Boardwalk in early October",
-        "credit": "The Cosmonaut",
-        "license": "CC BY-SA 2.5 CA",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/ca/deed.en",
-        "page": "https://commons.wikimedia.org/wiki/File:Sunday_Creek_Bog.jpg"
-      }
+      "lat": 45.587072,
+      "lng": -78.373786,
+      "difficulty": "Easy",
+      "source": {
+        "name": "Friends of Algonquin Park: Spruce Bog Boardwalk",
+        "url": "https://algonquinpark.on.ca/visit/recreational_activites/spruce-bog-boardwalk-trail.php"
+      },
+      "about": "Boardwalk sections give a close look at two northern spruce bogs. In mid-October the tamaracks turn gold, so this is often the strongest colour of the day.",
+      "highlights": [
+        "Gold tamaracks",
+        "Flat boardwalk",
+        "Toilets at the trailhead"
+      ],
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Sunday_Creek_Bog.jpg/1280px-Sunday_Creek_Bog.jpg",
+          "width": 1280,
+          "height": 617,
+          "alt": "Sunday Creek winding through the bog, seen from the boardwalk",
+          "credit": "The Cosmonaut",
+          "license": "CC BY-SA 2.5 CA",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/ca/deed.en",
+          "page": "https://commons.wikimedia.org/wiki/File:Sunday_Creek_Bog.jpg",
+          "date": "2020-10-03"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Sunday_Creek_Bog3.jpg/1280px-Sunday_Creek_Bog3.jpg",
+          "width": 1280,
+          "height": 861,
+          "alt": "Spruce and tamarack around open water in Sunday Creek Bog",
+          "credit": "The Cosmonaut",
+          "license": "CC BY-SA 2.5 CA",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/ca/deed.en",
+          "page": "https://commons.wikimedia.org/wiki/File:Sunday_Creek_Bog3.jpg",
+          "date": "2020-10-03"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Kettle_Bog.jpg/1280px-Kettle_Bog.jpg",
+          "width": 1280,
+          "height": 418,
+          "alt": "Panorama of Kettle Bog from the Spruce Bog Boardwalk",
+          "credit": "The Cosmonaut",
+          "license": "CC BY-SA 2.5 CA",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/ca/deed.en",
+          "page": "https://commons.wikimedia.org/wiki/File:Kettle_Bog.jpg",
+          "date": "2020-10-03"
+        }
+      ]
     },
     {
       "id": "visitor-centre",
@@ -251,16 +389,43 @@
       "description": "Huge panorama with no walking, plus washrooms. Closes at 5 PM.",
       "scene": "deck",
       "parking": "Large lot, the biggest in the corridor. Best fallback if other lots are full.",
-      "lat": 45.5839494,
-      "lng": -78.3593196,
-      "photo": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Algonquin_Provincial_Park-_Fall_Colour-View_from_Visitor_Centre_%E2%80%93Ontario.jpg/960px-Algonquin_Provincial_Park-_Fall_Colour-View_from_Visitor_Centre_%E2%80%93Ontario.jpg",
-        "alt": "Fall colour view from the Visitor Centre over the Sunday Creek valley",
-        "credit": "Mhsheikholeslami",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Algonquin_Provincial_Park-_Fall_Colour-View_from_Visitor_Centre_%E2%80%93Ontario.jpg"
-      }
+      "lat": 45.583922,
+      "lng": -78.359455,
+      "difficulty": "Easy",
+      "source": {
+        "name": "Friends of Algonquin Park: Algonquin Visitor Centre",
+        "url": "https://algonquinpark.on.ca/visit/locations/algonquin_visitor_centre.php"
+      },
+      "about": "Exhibits on the park’s natural and human history, a bookstore, and a viewing deck with a wide panorama of wild Algonquin landscape. No walking needed for the view.",
+      "highlights": [
+        "Observation deck panorama",
+        "Exhibits and bookstore",
+        "Flush toilets and free Wi-Fi"
+      ],
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Algonquin_Provincial_Park-_Fall_Colour-View_from_Visitor_Centre_%E2%80%93Ontario.jpg/1280px-Algonquin_Provincial_Park-_Fall_Colour-View_from_Visitor_Centre_%E2%80%93Ontario.jpg",
+          "width": 1280,
+          "height": 960,
+          "alt": "Fall colour view from the Visitor Centre over the Sunday Creek valley",
+          "credit": "Mhsheikholeslami",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Algonquin_Provincial_Park-_Fall_Colour-View_from_Visitor_Centre_%E2%80%93Ontario.jpg",
+          "date": "2010-10-03"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Algonquin_Visitor_Centre.JPG/1280px-Algonquin_Visitor_Centre.JPG",
+          "width": 1280,
+          "height": 853,
+          "alt": "The Algonquin Visitor Centre building from the parking area",
+          "credit": "Rrburke",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Algonquin_Visitor_Centre.JPG",
+          "date": "2009-09-02"
+        }
+      ]
     },
     {
       "id": "beaver-pond",
@@ -272,16 +437,54 @@
       "description": "Beaver dams, ponds and a rocky viewpoint in late golden light.",
       "scene": "pond",
       "parking": "Small trailhead lot at km 45.2.",
-      "lat": 45.5919786,
-      "lng": -78.340137,
-      "photo": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Parque_Provincial_Algonqu%C3%ADn_52.jpg/960px-Parque_Provincial_Algonqu%C3%ADn_52.jpg",
-        "alt": "Golden grasses around the beaver pond beside Beaver Pond Trail",
-        "credit": "LBM1948",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "page": "https://commons.wikimedia.org/wiki/File:Parque_Provincial_Algonqu%C3%ADn_52.jpg"
-      }
+      "lat": 45.592164,
+      "lng": -78.341027,
+      "difficulty": "Moderate",
+      "source": {
+        "name": "Friends of Algonquin Park: Beaver Pond Trail",
+        "url": "https://algonquinpark.on.ca/visit/recreational_activites/beaver-pond-trail.php"
+      },
+      "about": "A loop with good views of two beaver ponds, plus lodges and dams. The guide introduces beaver pond ecology. Late-afternoon light makes the ponds glow.",
+      "highlights": [
+        "Two beaver ponds",
+        "Beaver lodges and dams",
+        "Rocky viewpoint over the ponds"
+      ],
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Parque_Provincial_Algonqu%C3%ADn_52.jpg/1280px-Parque_Provincial_Algonqu%C3%ADn_52.jpg",
+          "width": 1280,
+          "height": 886,
+          "alt": "Golden grasses around the beaver pond beside Beaver Pond Trail",
+          "credit": "LBM1948",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Parque_Provincial_Algonqu%C3%ADn_52.jpg",
+          "date": "2010-10-08"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Parque_Provincial_Algonqu%C3%ADn_55.jpg/1280px-Parque_Provincial_Algonqu%C3%ADn_55.jpg",
+          "width": 1280,
+          "height": 850,
+          "alt": "Dark water and grassy hummocks in the beaver pond",
+          "credit": "LBM1948",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Parque_Provincial_Algonqu%C3%ADn_55.jpg",
+          "date": "2010-10-08"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Beaver_Pond-Algonquin.jpg/1280px-Beaver_Pond-Algonquin.jpg",
+          "width": 1280,
+          "height": 853,
+          "alt": "Beaver ponds seen from the rocky viewpoint on Beaver Pond Trail, in summer",
+          "credit": "Sarthkr",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Beaver_Pond-Algonquin.jpg",
+          "date": "2019-06-09"
+        }
+      ]
     }
   ],
   "route": [
@@ -292,33 +495,39 @@
       "note": "permit checked by plate"
     },
     {
+      "id": "whiskey-rapids",
       "km": 7.2,
       "name": "Whiskey Rapids Trail",
       "kind": "stop",
       "order": 1
     },
     {
+      "id": "hardwood-lookout",
       "km": 13.8,
       "name": "Hardwood Lookout",
       "kind": "backup"
     },
     {
+      "id": "peck-lake",
       "km": 19.2,
       "name": "Peck Lake",
       "kind": "backup"
     },
     {
+      "id": "hemlock-bluff",
       "km": 27.2,
       "name": "Hemlock Bluff",
       "kind": "backup"
     },
     {
-      "km": 31.1,
+      "id": "two-rivers-trail",
+      "km": 31,
       "name": "Two Rivers Trail",
       "kind": "stop",
       "order": 3
     },
     {
+      "id": "two-rivers-picnic",
       "km": 33.8,
       "name": "Lake of Two Rivers",
       "kind": "stop",
@@ -326,6 +535,7 @@
       "note": "picnic lunch"
     },
     {
+      "id": "lookout",
       "km": 39.7,
       "name": "Lookout Trail",
       "kind": "stop",
@@ -333,24 +543,28 @@
       "star": true
     },
     {
+      "id": "spruce-bog",
       "km": 42.5,
       "name": "Spruce Bog Boardwalk",
       "kind": "stop",
       "order": 5
     },
     {
+      "id": "visitor-centre",
       "km": 43,
       "name": "Visitor Centre deck",
       "kind": "stop",
       "order": 6
     },
     {
+      "id": "beaver-pond",
       "km": 45.2,
       "name": "Beaver Pond Trail",
       "kind": "stop",
       "order": 7
     },
     {
+      "id": "logging-museum",
       "km": 54.5,
       "name": "Logging Museum",
       "kind": "backup"
@@ -363,37 +577,172 @@
   ],
   "backups": [
     {
+      "id": "hardwood-lookout",
       "name": "Hardwood Lookout",
       "km": 13.8,
-      "length": "0.8 km",
-      "note": "Quick view over Smoke Lake",
-      "parking": "Small trailhead lot",
-      "lat": 45.5287757,
-      "lng": -78.7059041
+      "length": "1 km loop",
+      "parking": "Small trailhead lot.",
+      "lat": 45.529795,
+      "lng": -78.705268,
+      "difficulty": "Moderate",
+      "source": {
+        "name": "Friends of Algonquin Park: Hardwood Lookout Trail",
+        "url": "https://algonquinpark.on.ca/visit/recreational_activites/hardwood-lookout-trail.php"
+      },
+      "about": "A short loop through a typical Algonquin hardwood forest that ends at a fine view of Smoke Lake and the hills around it.",
+      "highlights": [
+        "View over Smoke Lake",
+        "Hardwood forest",
+        "Shortest trail on the corridor"
+      ],
+      "description": "Quick view over Smoke Lake.",
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Hardwood_Lookout_at_Algonquin_Provincial_Park_%2850399077813%29.jpg/1280px-Hardwood_Lookout_at_Algonquin_Provincial_Park_%2850399077813%29.jpg",
+          "width": 1280,
+          "height": 821,
+          "alt": "Smoke Lake and fall-coloured hills from Hardwood Lookout",
+          "credit": "David Zhang",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Hardwood_Lookout_at_Algonquin_Provincial_Park_%2850399077813%29.jpg",
+          "date": "2020-09-28"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Hardwood_Lookout_at_Algonquin_Provincial_Park_%2850398625417%29.jpg/1280px-Hardwood_Lookout_at_Algonquin_Provincial_Park_%2850398625417%29.jpg",
+          "width": 1280,
+          "height": 829,
+          "alt": "Another view over Smoke Lake from Hardwood Lookout in late September",
+          "credit": "David Zhang",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Hardwood_Lookout_at_Algonquin_Provincial_Park_%2850398625417%29.jpg",
+          "date": "2020-09-28"
+        }
+      ]
     },
     {
+      "id": "peck-lake",
       "name": "Peck Lake",
       "km": 19.2,
-      "length": "1.9 km",
-      "note": "Easy lakeshore loop",
-      "parking": "Small trailhead lot",
-      "mapsQuery": "Peck Lake Trail Algonquin Park"
+      "length": "2.3 km loop",
+      "parking": "Small trailhead lot.",
+      "lat": 45.547957,
+      "lng": -78.64926,
+      "difficulty": "Moderate",
+      "source": {
+        "name": "Friends of Algonquin Park: Peck Lake Trail",
+        "url": "https://algonquinpark.on.ca/visit/recreational_activites/peck-lake-trail.php"
+      },
+      "about": "A loop that goes all the way around the shoreline of Peck Lake. The guide covers the ecology of a typical Algonquin lake.",
+      "highlights": [
+        "Full lakeshore loop",
+        "Quiet water for reflections"
+      ],
+      "description": "Easy lakeshore loop.",
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Algonquin_Lake.jpg/1280px-Algonquin_Lake.jpg",
+          "width": 1280,
+          "height": 960,
+          "alt": "Peck Lake seen through the trees from the shoreline trail",
+          "credit": "Fridge Eater",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Algonquin_Lake.jpg",
+          "date": "2024-06-01"
+        }
+      ]
     },
     {
+      "id": "hemlock-bluff",
       "name": "Hemlock Bluff",
       "km": 27.2,
-      "length": "3.5 km",
-      "note": "Quieter, cliff view of Jack Lake",
-      "parking": "Small trailhead lot",
-      "mapsQuery": "Hemlock Bluff Trail Algonquin Park"
+      "length": "3.5 km loop",
+      "parking": "Small trailhead lot.",
+      "lat": 45.564723,
+      "lng": -78.551854,
+      "difficulty": "Moderate",
+      "source": {
+        "name": "Friends of Algonquin Park: Hemlock Bluff Trail",
+        "url": "https://algonquinpark.on.ca/visit/recreational_activites/hemlock-bluff-trail.php"
+      },
+      "about": "A longer loop through mixed forest and an eastern hemlock stand to an impressive view of Jack Lake.",
+      "highlights": [
+        "View of Jack Lake",
+        "Hemlock stand",
+        "Quieter than the busy trails"
+      ],
+      "description": "Quieter, cliff view of Jack Lake.",
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Hemlock_Bluff_Trail.jpg/1280px-Hemlock_Bluff_Trail.jpg",
+          "width": 1280,
+          "height": 439,
+          "alt": "Panorama over pines and fall-tinged mixed forest from the Hemlock Bluff Trail",
+          "credit": "The Cosmonaut",
+          "license": "CC BY-SA 2.5 CA",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/ca/deed.en",
+          "page": "https://commons.wikimedia.org/wiki/File:Hemlock_Bluff_Trail.jpg",
+          "date": "2020-10-03"
+        }
+      ]
     },
     {
+      "id": "logging-museum",
       "name": "Logging Museum Trail",
       "km": 54.5,
-      "length": "1.3 km",
-      "note": "Flat, with history exhibits",
-      "parking": "Large lot, plus overflow at Leaf Lake across the road",
-      "mapsQuery": "Algonquin Logging Museum"
+      "length": "1.3 km loop",
+      "parking": "Large lot, plus overflow at Leaf Lake across the road.",
+      "lat": 45.544112,
+      "lng": -78.26332,
+      "difficulty": "Easy",
+      "source": {
+        "name": "Friends of Algonquin Park: Algonquin Logging Museum",
+        "url": "https://algonquinpark.on.ca/visit/locations/algonquin-logging-museum.php"
+      },
+      "about": "An easy, wheelchair-accessible loop past a recreated camboose camp, an \"alligator\" steam tug and other logging-era exhibits. The trail and outdoor exhibits are open even when the building is closed.",
+      "highlights": [
+        "Logging history exhibits",
+        "Wheelchair accessible",
+        "Large lot plus overflow"
+      ],
+      "description": "Flat, with history exhibits.",
+      "photos": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Parque_Provincial_Algonqu%C3%ADn_02.jpg/1280px-Parque_Provincial_Algonqu%C3%ADn_02.jpg",
+          "width": 1280,
+          "height": 731,
+          "alt": "A recreated logger's cabin at the Algonquin Logging Museum",
+          "credit": "LBM1948",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Parque_Provincial_Algonqu%C3%ADn_02.jpg",
+          "date": "2010-10-07"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Parque_Provincial_Algonqu%C3%ADn_08.jpg/1280px-Parque_Provincial_Algonqu%C3%ADn_08.jpg",
+          "width": 1280,
+          "height": 850,
+          "alt": "The steam-powered \"alligator\" tug on display at the Logging Museum",
+          "credit": "LBM1948",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Parque_Provincial_Algonqu%C3%ADn_08.jpg",
+          "date": "2010-10-07"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Parque_Provincial_Algonquin_10.jpg/1280px-Parque_Provincial_Algonquin_10.jpg",
+          "width": 1280,
+          "height": 817,
+          "alt": "An old logging locomotive along the museum trail",
+          "credit": "LBM1948",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "page": "https://commons.wikimedia.org/wiki/File:Parque_Provincial_Algonquin_10.jpg",
+          "date": "2010-10-07"
+        }
+      ]
     }
   ],
   "skip": [
@@ -464,6 +813,5 @@
     "Use HDR or a polarizer so the yellows pop against sky and water.",
     "Cold drains phone batteries fast. Bring a power bank, gloves and a toque.",
     "Wear shoes with grip. Rocks and leaves can be frosty in the morning."
-  ],
-  "mapsLinkFormat": "https://www.google.com/maps/search/?api=1&query={lat},{lng}"
+  ]
 }

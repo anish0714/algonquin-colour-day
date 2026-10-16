@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { SCENES, SCENE_W, SCENE_H, seededRandom } from '../lib/scenes.js'
 
-export default function SceneCanvas({ scene, seed, label }) {
+export default function SceneCanvas({ scene, seed, label, className = 'scene' }) {
   const ref = useRef(null)
 
   useEffect(() => {
@@ -15,7 +15,7 @@ export default function SceneCanvas({ scene, seed, label }) {
   return (
     <canvas
       ref={ref}
-      className="scene"
+      className={className}
       width={SCENE_W}
       height={SCENE_H}
       role="img"
